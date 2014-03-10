@@ -4,7 +4,7 @@
     {% if page.nation_signup.content.size > 0 %}
     {{ page.nation_signup.content }}
     {% endif %}
-    
+
     <div align="center" class="one_column">
       <div class="form-wrap" align="left">
         <div class="form">
@@ -32,6 +32,7 @@
           <div class="row-fluid">
             <div class="span6"><label for="nation_signup_slug">Choose your NationBuilder URL</label><div style="width: 60%; float: left;">{% text_field "slug", class:"text" %}</div><div style="float: left; width: 30%; padding: 5px 0 0 5px;">.nationbuilder.com</div>
             </div>
+            <div class="span6"><label for="locale">Choose your language</label>{{ page.nation_signup.form_locales }}</div>
           </div>
 
           <div class="padbottommore"><small>(you can add your own domain later)</small></div>
